@@ -15,3 +15,5 @@ This file contains the implementation of the GetJ2534Interfaces function. This f
 ### main.py
 
 This file is the entry point of the application. It creates instances of the UI and ConnectionGUI classes and starts the main event loop of the application.
+
+### More to Come!
