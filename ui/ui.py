@@ -1,5 +1,4 @@
 from tkinter import *
-import winreg
 
 from func.J2534_Interfaces import *
 
@@ -37,7 +36,7 @@ class ConnectionGUI:
         self.InterfaceOptionMenu()
 
         self.btn_interfacerefresh = Button(self.frame, text="Refresh", width=10, command=self.InterfaceOptionMenu)
-        self.btn_connect = Button(self.frame, text="Connect", width=10, state="disabled")
+        self.btn_getecu = Button(self.frame, text="Get ECU", width=10, state="disabled")
 
         self.padx = 20
         self.pady = 5
@@ -60,7 +59,7 @@ class ConnectionGUI:
         self.drop_Interfaces.grid(column=2, row=2, padx=self.padx)
 
         self.btn_interfacerefresh.grid(column=3, row=2)
-        self.btn_connect.grid(column=3, row=3)
+        self.btn_getecu.grid(column=3, row=3)
 
     def InterfaceOptionMenu(self):
         """
